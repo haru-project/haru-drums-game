@@ -29,6 +29,8 @@
                 <ConcatenateStrings first="{wav_path}" output="example_wav_path" second="/example.wav"/>
                 <SubTree ID="HaruAudioMusicPlayAndWait" end_time="0" fade_duration="1.0" fade_enable="1" fade_out_duration="1.0" fade_out_enable="1" feedback="audio_music_feed" loop="0" music_file="{example_wav_path}" result="audio_music_result" start_time="0" volume="1"/>
             </Sequence>
+            <SubTree ID="HaruSpeaksTTSAndWait" feedback="tts_feed" phrases="Now is your turn!" result="tts_result"/>
+            <SubTree ID="HaruSpeaksTTSAndWait" feedback="tts_feed" phrases="Show me your skills with the drum" result="tts_result"/>
         </Sequence>
     </BehaviorTree>
     <!-- ////////// -->
